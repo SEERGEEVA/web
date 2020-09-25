@@ -1,5 +1,6 @@
 body {
   padding: 10px;
+  margin: 0px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -8,7 +9,7 @@ body {
 }
 
 h1 {
-  font-family: "Georgia", serif;
+  font-family: "courier";
   font-size: 36px;
   line-height: 30px;
   text-align: left;
@@ -22,17 +23,7 @@ h2{
 	padding-left: 12px;
 	padding-right: 22px;
 	color: #cccccc;
-}
-
-h3{
-	<!margin: 5px;
-	border-bottom: 12px;
-	padding-bottom: 12px;
-	padding-left: 25px;
-	padding-right: 12px;
-	padding-top: 7px;
-	font-family: "Georgia", sans-serif;
-	font-size: 12px;
+	font-family: "courier";
 }
 
 p {
@@ -56,6 +47,7 @@ p {
 	padding-left: 7px;
 	padding-top: 0px;
 	text-align: left;
+	padding-left: 490px;
 }
 
 #content pre{
@@ -108,12 +100,12 @@ p {
 }
 
 .container {
-  float: center;
+	float: center;
 }
 
 
 .site-footer {
-  display: flex;
-  justify-content: space-between;
-  color: #999999;
+	display: flex;
+	justify-content: space-between;
+	color: #999999;
 }
