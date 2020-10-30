@@ -22,4 +22,4 @@
 
 На данном этапе у вас должна получиться завершенная страничка с вашим портфолио.
 
-[Мой сайт] (https://seergeeva.github.io/web-lab1/)
+[Мой сайт](https://seergeeva.github.io/web-lab1/)
