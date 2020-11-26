@@ -4,12 +4,21 @@
 		<meta charset=UTF-8">
 		<title>Резюме</title>
 		<link rel="stylesheet" href="css/styles.css">
+		<script> 
+			function countTags() {
+				let all_tags = document.body.getElementsByTagName("*");
+				for (let el of new Set(Array.prototype.slice.call(all_tags).map(e => e.tagName))) {
+					console.log(el);
+					console.log(document.body.querySelectorAll(el).length);
+				}	
+			}
+		</script>
 	</head>
-	<body>
+	<body onload="countTags()">
 	<div class="header clearfix">
 		<div class="block photos">
 			<h1>Сергеева Вероника M3306</h1>
-			<p>Самое лучшее резюме эвер</p>
+			<p>Самое лучшее резюме эвер</p>	
 			<img src="css/me21.jpg" width="150" height="150" alt="Мое фото" class="round">
 			<img src="css/me3.jpg" width="150" height="150" alt="Мое фото2" class="round">
 			<img src="css/me20.jpg" width="150" height="150" alt="Мое фото3" class="round">
