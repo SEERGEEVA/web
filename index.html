@@ -21,10 +21,31 @@
 			<p>Самое лучшее резюме эвер</p>	
 			<img src="css/me21.jpg" width="150" height="150" alt="Мое фото" class="round">
 			<img src="css/me3.jpg" width="150" height="150" alt="Мое фото2" class="round">
-			<img src="css/me20.jpg" width="150" height="150" alt="Мое фото3" class="round">
+			<img id="image" src="css/me20.jpg" width="150" height="150" alt="Мое фото3" class="round" onClick="imgsrc();">
 			<img src="css/me2.jpg" width="150" height="150" alt="Мое фото3" class="round">
 			<img src="css/me4.jpg" width="150" height="150" alt="Мое фото3" class="round">
+			<script>
+				let i = 0;
+
+				let image = document.getElementById("image");
+
+				let imgs = new Array("css/me6.jpg","css/me13.jpg", "css/me8.jpg");
+
+				function imgsrc() {
+					i++;
+					image.src = imgs[i % 3];
+				}
+			</script>
 			<a href="gallery.html"><p> еще больше фоточек тут </p></a>
+			<button id="myBtn">Контакты</button>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p>Сергеева Вероника Сергеевна</p>
+					<p>Вяземский пер. 5/7, г.Санкт-Петербург</p>
+					<p>8-900-637-87-02</p>
+				</div>
+			</div>
 		</div>
 		<div class="block links">
 			<a href = "https://www.instagram.com/seergeeeeva/?hl=ru"><p> <img src="css/inst.jpg" width="40" height="40" alt="инста" class="round2"> @seergeeeeva </p></a>
@@ -36,6 +57,32 @@
 			<a href = "hobby.html"><img src="css/land2.jpg" class="square"></a>
 		</div>
 	</div>
+	<script>
+		let modal = document.getElementById("myModal");
+
+
+		let btn = document.getElementById("myBtn");
+
+
+		let span = document.getElementsByClassName("close")[0];
+
+
+		btn.onclick = function() {
+			modal.style.display = "block";
+		}
+
+
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+
+
+		window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+					}
+		}
+	</script>
 	<div class="content clearfix">
 		<div class="block content1">
 			<a href="https://github.com/SEERGEEVA"><h2>Код, за который мне не стыдно<img src="css/smile.svg" width="40" height="40" alt="смайл" class="round2"></h2></a>
